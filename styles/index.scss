@@ -1,0 +1,68 @@
+/*FONT LOBSTER GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Hubballi&family=Inter&family=Lobster&display=swap');
+
+:root{
+  --colorblack:#040305;
+  --colorPurple:#9800ce;
+  --colorgray:rgb(87,87,87);
+}
+
+body{
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgb(87, 62, 62);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+.grid_column{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+header{
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid red;
+  box-sizing: border-box;
+  background-color: black;
+  /* column 1 */
+  a img{
+    width: 50px;
+    opacity: 0.9;
+  }
+  a h2{
+    margin-bottom: 0px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    animation-name: brilho;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  /* column 2 */
+  main{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main a{
+    margin-right: 5px;
+  }
+}
+
+@keyframes brilho{
+  0%{
+    color:#fff;
+    text-shadow: 0 0 12px var(--colorPurple),
+    0 0 50px var(--colorPurple)
+    0 0 100px var(--colorPurple);
+  }
+  10%{
+  }
+}
