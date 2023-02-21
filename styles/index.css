@@ -125,15 +125,15 @@ header main a:hover {
     color: rgb(150, 119, 150);
   }
 }
-/*LINKs DE DENTRO DA PÁGINA*/
+/*LINKs PARA NAVEGAR DENTRO DA PÁGINA*/
 .div_links_dentro_pg {
   margin: auto;
   margin-top: 10px;
-  width: 850px;
+  width: 50%;
   display: grid;
   grid-auto-flow: column;
   background-color: white;
-  height: 158px;
+  height: 50%;
   margin-bottom: 0px;
   padding: 8px 25px 8px 25px;
   box-sizing: border-box;
