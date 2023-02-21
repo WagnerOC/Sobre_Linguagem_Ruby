@@ -125,9 +125,40 @@ header main a:hover {
     color: rgb(150, 119, 150);
   }
 }
+/*LINKs DE DENTRO DA PÁGINA*/
+.div_links_dentro_pg {
+  margin: auto;
+  margin-top: 10px;
+  width: 850px;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: white;
+  height: 158px;
+  margin-bottom: 0px;
+  padding: 8px 25px 8px 25px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 59.44px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.575);
+}
+
+.div_links_dentro_pg a {
+  color: black;
+  line-height: 25px;
+  font-family: "Bitter", serif;
+  color: rgb(63, 19, 57);
+}
+
+.ul_img {
+  list-style-image: url(/imgs/ruby_ul_link.png);
+  margin: 0;
+}
+
 /* CONTENT */
 #content {
-  margin-top: 15px;
+  border-radius: 10px;
+  margin-top: 35px;
   margin-bottom: 0;
   max-width: 100%;
   height: 100%;
@@ -154,16 +185,17 @@ header main a:hover {
   color: rgb(68, 67, 67);
 }
 
+/*COR LINK DOS PARÁGRAFOS*/
 #content div p a {
-  color: rgba(74, 179, 25, 0.7176470588);
+  color: rgba(212, 43, 85, 0.7176470588);
   font-style: italic;
 }
 
 #content div p a:hover {
-  color: rgb(148, 211, 89);
+  color: rgb(211, 89, 195);
   transition: 500ms;
   animation-name: sombra_p;
-  animation-duration: 10s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -172,19 +204,23 @@ header main a:hover {
 
 @keyframes sombra_p {
   0% {
-    color: rgba(147, 231, 108, 0.7176470588);
+    color: rgb(211, 89, 195);
     text-shadow: 0 0 12px var(--colorPurple), 0 0 50px var(--colorPurple) 0 0 100px var(--colorPurple);
     transition: 500ms;
   }
   10% {
-    color: rgb(173, 214, 148);
+    color: rgb(151, 76, 141);
     transition: 500ms;
   }
   90% {
-    color: rgb(109, 163, 76);
+    color: rgb(189, 30, 168);
     transition: 500ms;
   }
 }
+#content div p a:active {
+  color: rgba(123, 190, 14, 0.904);
+}
+
 .img_yukihiro {
   float: right;
   border-radius: 5px;
@@ -243,6 +279,48 @@ header main a:hover {
   height: 50px;
 }
 
+/*EMPRESAS QUE UTILIZAM RUBY ON RAILS*/
+.margin_left {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.airbud_logo {
+  width: 100px;
+}
+
+.hulu_logo {
+  width: 100px;
+}
+
+.soundcloud_logo {
+  width: 100px;
+  height: 40px;
+}
+
+.slidesshare_logo {
+  width: 100px;
+}
+
+.Zendesk_logo {
+  width: 100px;
+}
+
+.github_lg {
+  width: 100px;
+}
+
+.shopify_logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.basecamp_logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/*ESTILO DA LISTA ESQUERDA DA PÁGINA | COM LOGO DE RUBY*/
 #content div ul {
   color: #825692;
   font-size: 20px;
@@ -286,7 +364,7 @@ footer {
   background-color: black;
   padding: 0 20px 0px 20px;
   width: 100%;
-  height: 70px;
+  height: 50px;
   position: sticky;
   bottom: 0;
   justify-content: space-between;
@@ -356,19 +434,12 @@ span:nth-of-type(13) {
 
 footer div img {
   width: 50px;
-  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 footer a .footer_link_git {
-  margin-top: -8px;
   width: 120px;
   border-radius: 5px;
-}
-
-footer figure figcaption {
-  text-align: center;
-  font-family: "Oswald", sans-serif;
 }/*# sourceMappingURL=index.css.map */
