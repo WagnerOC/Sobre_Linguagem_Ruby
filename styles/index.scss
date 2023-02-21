@@ -17,6 +17,9 @@ body{
   margin-right: 15%;
   margin-top: 0;
   background-color: rgb(87, 62, 62);
+  background-image: url(/imgs/ruby_fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Todos os links*/
@@ -36,7 +39,6 @@ a{
 header{
   display: grid;
   grid-auto-flow: column;
-  border: 1px solid red;
   box-sizing: border-box;
   background-color: black;
   padding:0 20px 0 20px;
@@ -120,6 +122,11 @@ header{
         font-family: 'Oswald', sans-serif;
         padding: 0px 0px 0px 50px;
       }
+      main a:hover{
+        color: #e7cef0;
+        transition: 500ms;
+        
+      }
 
 }
 
@@ -144,9 +151,11 @@ header{
 
 #content{
   margin-top: 15px;
+  margin-bottom: 0;
+  max-width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 5px;
+  box-shadow: 0px 5px 10px 3px darkred;
 }
 
 #content div{
@@ -155,7 +164,7 @@ header{
 
 #content div h3{
   color:darkred;
-  font-size: 24px;
+  font-size: 30px;
   font-weight:500;
   font-family: 'Bebas Neue', cursive;
 }
@@ -169,12 +178,36 @@ header{
 }
 
 #content div p a{
-  color: green;
+  color: #4ab319b7;
   font-style: italic;
 }
 #content div p a:hover{
-    color: rgb(34, 112, 19);
+    color: rgb(148, 211, 89);
     transition:500ms;
+    animation-name: sombra_p;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transition: 500ms;
+}
+
+@keyframes sombra_p{
+  0%{
+    color: #93e76cb7;
+    text-shadow: 0 0 12px var(--colorPurple),
+    0 0 50px var(--colorPurple)
+    0 0 100px var(--colorPurple);
+    transition: 500ms;
+  }
+  10%{
+    color:rgb(173, 214, 148);
+    transition: 500ms;
+  }
+  90%{
+    color:rgb(109, 163, 76);
+    transition: 500ms;
+  }
 }
 
 .img_yukihiro{
@@ -184,25 +217,33 @@ header{
   padding: 0px 0px 0px 20px;
 }
 
+.python_logo{
+  margin-left: 15px;
+}
 .eifell_logo{
   width: 100px;
+  margin-left: 15px;
+  margin-left: 15px;
 }
 
 .ada_logo{
   width: 90px;
   height: 30px;
   margin-top: 20px;
+  margin-left: 15px;
 }
 
 .lisp_logo{
   width: 70px;
   margin-top: 10px;
   margin-left: 5px;
+  margin-left: 15px;
 }
 
 .smaltake_logo{
   width: 100px;
   height: 40px;
+  margin-left: 15px;
 }
 
 .david_img{
@@ -213,22 +254,23 @@ header{
 }
 
 .groovy_logo{
-  width: 50%;
-  height: 10%;
+  width: 100px;
+  height: 50px;
 }
 
 .falcon_logo{
-  width: 50px;
-  height: 10px;
+  width: 100px;
 }
 
+
+
 .linguagem_d_logo{
-  width: 50px;
-  height: 10px;
+  width: 100px;
+  height: 50px;
 }
 
 #content div ul{
-  color: #7e279e;
+  color: #825692;
   font-size: 20px;
   font-family: 'Bitter', serif;
   line-height: 40px;
@@ -236,4 +278,127 @@ header{
 
 ul{
   list-style-image: url(/imgs/ruby_logo20px.png);
+  
+}
+
+/* CONTENT 2 */
+
+.content_2{
+  background-color: white;
+  max-width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 50px 100px 10px 100px ;
+}
+
+.content_2 h3{
+  color:darkred;
+  font-size: 28px;
+  font-weight:500;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.content_2 p{
+  font-size: 18px;
+  font-family: 'Bitter', serif;
+  line-height: 40px;
+  text-align: justify;
+  color: rgb(68, 67, 67);
+}
+
+/*FOOTER*/
+
+footer{
+  display: grid;
+  grid-auto-flow: column;
+  box-sizing: border-box;
+  background-color: black;
+  padding:0 20px 0px 20px;
+  width: 100%;
+  height: 70px ;
+  position: sticky;
+  bottom: 0;
+  justify-content: space-between;
+}
+
+footer span{
+  color:rgba(160, 35, 35, 0.822);
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  animation-name: brilho;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span:nth-of-type(2){
+  animation-delay: 0.15s;
+
+}
+span:nth-of-type(3){
+  animation-delay: 0.50s;
+
+}
+span:nth-of-type(4){
+  animation-delay: 0.75s;
+
+}
+span:nth-of-type(5){
+  animation-delay: 0.95s;
+
+}
+span:nth-of-type(6){
+  animation-delay: 1.25s;
+
+}
+span:nth-of-type(7){
+  animation-delay: 1.50s;
+
+}
+span:nth-of-type(8){
+  animation-delay: 1.75s;
+
+}
+span:nth-of-type(9){
+  animation-delay: 1.95s;
+
+}
+span:nth-of-type(10){
+  animation-delay: 2.25s;
+
+}
+span:nth-of-type(11){
+  animation-delay: 2.50s;
+
+}
+span:nth-of-type(12){
+  animation-delay: 2.75s;
+
+}
+span:nth-of-type(13){
+  animation-delay: 3s;
+
+}
+
+footer div img{
+  width: 50px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a .footer_link_git{
+  margin-top: -8px;
+  width: 120px;
+  border-radius: 5px;
+}
+
+footer figure figcaption{
+ text-align: center;
+ font-family: 'Oswald', sans-serif;
 }
